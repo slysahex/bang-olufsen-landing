@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bang &amp; Olufsen</title>
 
-    <link rel="icon" type="image/svg+xml" href="./src/images/logo.svg">
+    <link rel="icon" type="image/svg+xml"
+      href="./src/images/logo.svg">
 
     <link rel="preconnect"
       href="https://fonts.googleapis.com">
@@ -336,5 +337,15 @@
     </footer>
     <div class="footer_back">
     </div>
+
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+
+      document.querySelectorAll('.menu a').forEach((link) => {
+        link.addEventListener('click', () => {
+          menuToggle.checked = false;
+        });
+      });
+    </script>
   </body>
 </html>

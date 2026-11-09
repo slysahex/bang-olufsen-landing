@@ -144,6 +144,11 @@
     font-size: 16px;
     line-height: 1.4;
     color: #191919;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 
   &__address {
